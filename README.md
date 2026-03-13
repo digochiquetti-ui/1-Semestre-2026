@@ -1,0 +1,1 @@
+Este repositório foi criado para organizar todos os exercícios e projetos que venho desenvolvendo durante o primeiro semestre da faculdade. A ideia é manter um histórico do que estou aprendendo nas aulas de algoritmos.
