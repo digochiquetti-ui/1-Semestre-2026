@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int opcao;
+    float n1, n2, resultado;
+
+    printf("1 - SOMA\n");
+    printf("2 - SUBTRACAO\n");
+    printf("3 - MULTIPLICACAO\n");
+    printf("4 - DIVISAO\n");
+    printf("5 - POTENCIA\n");
+    printf("6 - RAIZ QUADRADA\n");
+    printf("Escolha: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("Digite dois numeros: ");
+            scanf("%f %f", &n1, &n2);
+            resultado = n1 + n2;
+            printf("Resultado: %.2f\n", resultado);
+            break;
+        case 2:
+            printf("Digite dois numeros: ");
+            scanf("%f %f", &n1, &n2);
+            resultado = n1 - n2;
+            printf("Resultado: %.2f\n", resultado);
+            break;
+        case 4:
+            printf("Digite dois numeros: ");
+            scanf("%f %f", &n1, &n2);
+            if (n2 != 0) printf("Resultado: %.2f\n", n1 / n2);
+            else printf("Erro: Divisao por zero.\n");
+            break;
+        case 3:
+            printf("Digite dois numeros: ");
+            scanf("%f %f", &n1, &n2);
+            resultado = n1 * n2;
+            printf("Resultado: %.2f\n", resultado);
+            break;
+        case 5:
+            printf("Digite a base e o expoente: ");
+            scanf("%f %f", &n1, &n2);
+            resultado = pow(n1, n2);
+            printf("Resultado: %.2f\n", resultado);
+            break;
+        case 6:
+            printf("Digite o numero: ");
+            scanf("%f", &n1);
+            if (n1 >= 0) printf("Resultado: %.2f\n", sqrt(n1));
+            else printf("Erro: Numero negativo.\n");
+            break;
+        default:
+            printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}
